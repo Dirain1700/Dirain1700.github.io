@@ -1,4 +1,23 @@
-<link rel="stylesheet" href="./index.css">
+<style type="text/css">
+    .square_box {
+        position: relative;
+        max-width: 300px;
+        background: #ffb6c1;
+    }
+    
+    .square_box::before {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+    
+    .square_box p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+</style>
 <div class="square_contents">
   <div><p>テキスト</p></div>
   <div><p>テキスト</p></div>
